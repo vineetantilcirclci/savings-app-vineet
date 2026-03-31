@@ -7,9 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .js,.jsx --max-warnings=0",
+    "test:e2e:stable": "playwright test --project=chromium",
+    "test:e2e:full": "playwright test",
+    "test:e2e:visual": "playwright test --grep @visual",
+    "test:perf": "playwright test --grep @perf",
+    "cov:e2e:report": "nyc report || true",
+    "cov:e2e:stable:publish": "codecov -F e2e-stable || true",
+    "cov:e2e:full:publish": "codecov -F e2e-full || true",
+    "cov:unit:publish": "codecov -F unit || true"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -26,6 +35,9 @@
     "@vitest/ui": "^1.0.4",
     "jsdom": "^23.0.1",
     "vite": "^5.0.8",
-    "vitest": "^1.0.4"
+    "vitest": "^1.0.4",
+    "@playwright/test": "^1.40.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2"
   }
-} 
+}
