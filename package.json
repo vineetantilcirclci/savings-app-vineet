@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "test:e2e:visual": "echo 'No visual e2e tests configured' && exit 0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,4 +29,4 @@
     "vite": "^5.0.8",
     "vitest": "^1.0.4"
   }
-} 
+}
