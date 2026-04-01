@@ -9,7 +9,17 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src",
+    "test:e2e:stable": "playwright test --config=playwright.config.js",
+    "test:e2e:full": "playwright test --config=playwright.config.js",
+    "test:e2e:visual": "playwright test --config=playwright.visual.config.js",
+    "test:e2e:couchdb": "playwright test --config=playwright.couchdb.config.js",
+    "test:perf": "playwright test --config=playwright.perf.config.js",
+    "cov:e2e:report": "nyc report",
+    "cov:e2e:stable:publish": "codecov -f coverage/lcov.info -F e2e-stable",
+    "cov:e2e:full:publish": "codecov -f coverage/lcov.info -F e2e-full",
+    "cov:unit:publish": "codecov -f coverage/lcov.info -F unit"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,4 +38,4 @@
     "vite": "^5.0.8",
     "vitest": "^1.0.4"
   }
-} 
+}
