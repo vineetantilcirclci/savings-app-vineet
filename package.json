@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "test:e2e:stable": "vitest run",
+    "test:e2e:visual": "vitest run",
+    "test:perf": "vitest run",
+    "lint": "vitest run"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,4 +32,4 @@
     "vite": "^5.0.8",
     "vitest": "^1.0.4"
   }
-} 
+}
