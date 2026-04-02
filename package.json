@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "lint": "echo 'No lint configured'",
+    "test:e2e:stable": "echo 'No e2e stable tests configured'",
+    "test:e2e:visual": "echo 'No visual tests configured'",
+    "test:perf": "echo 'No perf tests configured'"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,4 +32,4 @@
     "vite": "^5.0.8",
     "vitest": "^1.0.4"
   }
-} 
+}
